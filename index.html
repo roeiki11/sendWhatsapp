@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var number = prompt("Enter phone number:", "");
+if (number != null) {
+	if (number.startsWith('0')) {
+		number = "+972" + number.substring(1);
+		}
+	window.location.replace('https://wa.me/' + number);
+}
+</script>
+
+</body>
+</html>

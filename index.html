@@ -5,6 +5,7 @@
 <script>
 var number = prompt("Enter phone number:", "");
 if (number != null) {
+	number = number.replace(/\D/g,'');
 	if (number.startsWith('0')) {
 		number = "+972" + number.substring(1);
 		}
